@@ -1,0 +1,369 @@
+<app-navbar></app-navbar>
+
+<div class="image-box">
+  <div id="top">
+    <h1>In Soo "Ian" Yang</h1>
+    <h2 class="lead">Software Developer</h2>
+    <p>
+      <a [scrollTo]="'#aboutme'" [scrollDuration]="300" [scrollOffset]="-110" class="fa fa-angle-double-down" style="font-size:48px;color:white"></a>
+
+    </p>
+
+  </div>
+
+
+</div>
+
+<div class="image-box1 row container-fluid">
+  <div class="kobe col-lg-3 col-md-3 col-sm-8" id="aboutme">
+    <img src="../../assets/ian.jpg" id="profile_pic">
+
+
+  </div>
+  
+  <div class="aboutme col-lg-8 col-md-8 col-sm-6">
+    <h1>About Me</h1>
+    <p class="paragraph">
+      Hi there, I'm In Soo. I was born in South Korea and grew up in San Jose.I'm a result-driven energetic analytical software developer with experience in MEAN, MERN, Python, and iOS. Unique ability to quickly learn and master new technologies, while being successful working in both team and independent settings. Seeking a professional position at a company where my knowledge and skills can be used fully and help contribute to it’s mission.
+    </p>
+
+
+    <div class="row rowicons">
+      <div class="col-md-3 col-sm-6">
+
+        <a href='../../assets/resume.pdf' target="_blank" open>
+          <i class="fa fa-file-text fa-4x" aria-hidden="true"></i>
+      Resume</a>
+
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <a href="mailto:isyang1223@gmail.com" >
+          <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
+        Email</a>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <a href="https://www.linkedin.com/in/in-soo-yang/" target="_blank">
+          <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+       LinkedIn</a>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <a href="https://github.com/isyang1223" target="_blank">
+          <i class="fa fa-github-square fa-4x" aria-hidden="true"></i>
+
+          GitHub
+        </a>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</div>
+
+<div class="background-project">
+  <h1>
+    PROJECTS
+  </h1>
+
+
+
+</div>
+
+
+<div class="image-box2 container-fluid">
+
+  <div id="projects" class="container">
+    <div *ngIf='userdashboard' class="projects">
+      <app-userdashboard (BackEventEmitter)='switchBack()'></app-userdashboard>
+    </div>
+    <div *ngIf='petshelter' class="projects">
+      <app-petshelter (BackEventEmitter)='switchBack()'></app-petshelter>
+    </div>
+    <div *ngIf='linkme' class="projects">
+      <app-linkme (BackEventEmitter)='switchBack()'></app-linkme>
+    </div>
+    <div *ngIf='satsuma' class="projects">
+      <app-satsuma (BackEventEmitter)='switchBack()'></app-satsuma>
+    </div>
+
+    <div *ngIf='showcom' class='row'>
+      <div class='col-lg-6 col-md-6 col-sm-12 item-spacing'>
+        <div class='card h-100 topcard'>
+          <div class='project-card'>
+            <h3>YourSpace</h3>
+            <img src="../../assets/userdashscreenshot.png" alt=''>
+            <p>Full stack web development with Python, mini social network message board including login and registration with
+              many to many relationship CRUD function.</p>
+            <button (click)="clickDetailUserdashboard()">More Details</button>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-6 col-md-6 col-sm-12 item-spacing'>
+        <div class='card h-100 topcard'>
+          <div class='project-card'>
+            <h3>LinkME</h3>
+            <img src="../../assets/linkmescreenshot.png" alt=''>
+            <p>Full MERN(MongoDB, Express, React, Node.js) stack web development, social media/network for developers. CRUD
+              function using NoSQL database.</p>
+            <button (click)="clickDetailLinkme()">More Details</button>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-6 col-md-6 col-sm-12 item-spacing'>
+        <div class='card h-100 bottomcard'>
+          <div class='project-card'>
+            <h3>Satsuma Sushi (in progress)</h3>
+            <img src="../../assets/satsumasushiscreenshot.png" alt=''>
+            <p>Freelance project for a client, sushi restaurant using Express, Angular, Node.js</p>
+            <button (click)="clickDetailSatsuma()">More Details</button>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-6 col-md-6 col-sm-12 item-spacing'>
+        <div class='card h-100 bottomcard'>
+          <div class='project-card'>
+            <h3>Pet Shelter</h3>
+            <img src="../../assets/petshelterscreenshot.png" alt=''>
+            <p>Full MEAN(MongoDB, Express, Angular, Node.js) stack web development, CRUD function using NoSQL database with
+              able to upload and set pet's profile picture.</p>
+            <button (click)="clickDetailPetshelter()">More Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+</div>
+<div class="background-skills">
+  <h1>
+    SKILLS
+  </h1>
+
+
+
+</div>
+
+
+<div class="image-box3 row container-fluid">
+
+  <div id="skills">
+
+
+    <div class="col-md-4 col-sm-4 portfolio-item">
+      <div class="card h-100">
+        <div class="card-header">
+          Languages
+        </div>
+        <div class="card-body">
+          <ul class="card-text">
+            <li>Javascript</li>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>Swift 4</li>
+            <li>HTML, CSS</li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="col-md-4 col-sm-4 portfolio-item">
+      <div class="card h-100">
+        <div class="card-header">
+          Front End
+        </div>
+        <div class="card-body">
+          <ul class="card-text">
+            <li>Angular</li>
+            <li>jQuery</li>
+            <li>AJAX, JSON</li>
+            <li>RESTful APIs</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-4 col-sm-4 portfolio-item">
+      <div class="card h-100">
+        <div class="card-header">
+          Back End
+        </div>
+        <div class="card-body">
+          <ul class="card-text">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Django</li>
+            <li>Flask</li>
+            <li>Restful Routing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="col-md-4 col-sm-4 portfolio-item">
+      <div class="card h-100">
+        <div class="card-header">
+          Database
+        </div>
+        <div class="card-body">
+          <ul class="card-text">
+            <li>MySQL</li>
+            <li>NoSQL</li>
+            <li>MongoDB</li>
+            <li>Mongoose</li>
+            <li>Django ORM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 col-sm-4 portfolio-item">
+      <div class="card h-100">
+        <div class="card-header">
+          Software
+        </div>
+        <div class="card-body">
+          <ul class="card-text">
+            <li>Git</li>
+            <li>MySQLWorkbench</li>
+            <li>Xcode</li>
+            <li>Postman</li>
+            <li>Visual Studio Code</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4 portfolio-item">
+      <div class="card h-100">
+        <div class="card-header">
+          Methodologies
+        </div>
+        <div class="card-body">
+          <ul class="card-text">
+            <li>OOP</li>
+            <li>MVC</li>
+            <li>RESTful architecture</li>
+            <li>CRUD operations</li>
+            <li>Resposive web design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+<div class="background-contact">
+  <h1>
+    CONTACT
+  </h1>
+
+
+
+</div>
+
+
+<div class="image-box4">
+
+  <div id="contact" class="container">
+
+
+
+    <h2>Contact Me: </h2>
+    <h4>
+      <a href="mailto:isyang1223@gmail.com">isyang1223@gmail.com</a>
+    </h4>
+
+    <form (submit)="onSubmit()" name="contactForm">
+      <div class="form-group">
+        <label>Name
+          <small *ngIf="!(email.name.length > 3)">| enter at least 4 characters</small>
+          <small *ngIf="!(email.name.length < 50)">| name over 50 characters</small>
+        </label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name" name="email.name" [(ngModel)]="email.name" ng-minlength="3"
+          ng-maxlength="50">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email.email" [(ngModel)]="email.email">
+      </div>
+      <div class="form-group">
+        <label>Message
+          <small *ngIf="!(email.message.length > 19)"> | enter atleast 20 characters</small>
+          <small *ngIf="!(email.message.length < 1000)"> |message over 1000 characters</small>
+        </label>
+        <textarea class="form-control" id="message" placeholder="Enter message" rows="5" name="email.message" [(ngModel)]="email.message"
+          ng-minlength="3" ng-maxlength="1000"></textarea>
+
+      </div>
+      <button type="submit" class="btn btn-default btn-send">Send</button>
+    </form>
+
+
+
+
+  </div>
+
+  <div class="foot">
+    <div class="rowicons container">
+      <div class="col-md-3 col-sm-6">
+        <a href="../../assets/resume.pdf" target="_blank" open>
+          <i class="fa fa-file-text fa-4x" aria-hidden="true"></i>
+        Resume</a>
+
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <a href="mailto:isyang1223@gmail.com" target="_top">
+          <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
+       Email</a>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <a href="https://www.linkedin.com/in/in-soo-yang/" target="_blank">
+          <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+       LinkedIn</a>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <a href="https://github.com/isyang1223" target="_blank">
+          <i class="fa fa-github-square fa-4x" aria-hidden="true"></i>
+
+GitHub
+        </a>
+      </div>
+    </div>
+    <p>© 2018 In Soo Yang</p>
+  </div>
+
+
+
+
+
+
+
+
+
+</div>
