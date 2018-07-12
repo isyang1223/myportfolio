@@ -1,8 +1,8 @@
 <app-navbar></app-navbar>
 
 <div class="image-box">
-  <div id="top">
-    <h1>In Soo "Ian" Yang</h1>
+  <div id="top" ngsReveal>
+    <h1 >In Soo "Ian" Yang</h1>
     <h2 class="lead">Software Developer</h2>
     <p>
       <a [scrollTo]="'#aboutme'" [scrollDuration]="300" [scrollOffset]="-110" class="fa fa-angle-double-down" style="font-size:48px;color:white"></a>
@@ -14,7 +14,7 @@
 
 </div>
 
-<div class="image-box1 row container-fluid">
+<div class="image-box1 row">
   <div class="kobe col-lg-3 col-md-3 col-sm-8" id="aboutme">
     <img src="assets/ian.jpg" id="profile_pic">
   </div>
@@ -75,7 +75,7 @@
 
 <div class="image-box2 container-fluid">
 
-  <div id="projects" class="container">
+  <div id="projects" class="container" ngsReveal>
     <div *ngIf='userdashboard' class="projects">
       <app-userdashboard (BackEventEmitter)='switchBack()'></app-userdashboard>
     </div>
@@ -150,7 +150,7 @@
 
 <div class="image-box3 row container-fluid">
 
-  <div id="skills">
+  <div id="skills" ngsReveal>
 
 
     <div class="col-md-4 col-sm-4 portfolio-item">
@@ -353,9 +353,6 @@ GitHub
     </div>
     <p>© 2018 In Soo Yang</p>
   </div>
-
-
-
 
 
 

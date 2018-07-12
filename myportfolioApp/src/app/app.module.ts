@@ -7,10 +7,7 @@ import { FormsModule } from "@angular/forms";
 
 import { ScrollToModule } from 'ng2-scroll-to-el';
 
-
-
-
-
+import { NgsRevealModule } from 'ng-scrollreveal';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -38,10 +35,11 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    NgsRevealModule.forRoot()
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
-export class MyModule { }
+export class AppModule {}
+
