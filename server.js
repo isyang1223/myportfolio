@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, './myportfolioApp/dist')));
 
 
 
-app.post("/myportfolio/send", function(req, res) {
+app.post("/send", function(req, res) {
   console.log("sent to server");
   let helperOptions = {
     from: "Website portfolio",
