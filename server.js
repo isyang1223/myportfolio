@@ -31,24 +31,22 @@ app.use(express.static(path.join(__dirname, './myportfolioApp/dist')));
 
 
 
-app.post('/send', function (req, res) {
-
-    console.log("sent to server")
-    let helperOptions = {
-        from: "Website portfolio",
-        to: "isyang1223@gmail.com",
-        subject: req.body.name + " " + req.body.email,
-        text: req.body.message
+app.post("/myportfolio/send", function(req, res) {
+  console.log("sent to server");
+  let helperOptions = {
+    from: "Website portfolio",
+    to: "isyang1223@gmail.com",
+    subject: req.body.name + " " + req.body.email,
+    text: req.body.message
+  };
+  transporter.sendMail(helperOptions, (error, info) => {
+    if (error) {
+      return console.log(error);
+    } else {
+      res.json({ message: "Success" });
     }
-    transporter.sendMail(helperOptions, (error, info) => {
-        if (error) {
-            return console.log(error)
-        } else {
-            res.json({ message: "Success" })
-        }
-    });
-
-})
+  });
+});
 
 
 
