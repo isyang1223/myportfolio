@@ -375,7 +375,8 @@ body {
 	
 	width: 65%;
 	height: 60%;
-	border-radius: 50%;
+    border-radius: 50%;
+    padding-bottom: 30px;
    
 }
 .item-spacing1 {
