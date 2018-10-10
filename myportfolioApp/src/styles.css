@@ -216,6 +216,9 @@
     text-align: center;
     
 }
+.iconDiv {
+    text-align: center;
+}
 
 .rowicons{
     padding-bottom: 60px;
@@ -256,6 +259,7 @@
 }
 .card {
     border: 1px solid black;
+    word-wrap: break-word;
 }
 .card-text li {
     text-align: center;
