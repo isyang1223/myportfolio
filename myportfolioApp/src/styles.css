@@ -392,7 +392,12 @@ body {
 }
 .item-spacing2 {
     margin-top: 60px;
+    
+}
+.item-spacing3 {
+    margin-top: 60px;
     margin-bottom: 60px;
+    
 }
 .row {
     margin-left: 0px;
