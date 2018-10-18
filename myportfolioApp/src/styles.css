@@ -361,12 +361,17 @@ body {
 .topcard {
 
 
-    height: 460px;
+    height: 470px;
+}
+.mcard {
+
+
+    height: 470px;
 }
 .bottomcard {
 
 
-    height: 460px;
+    height: 520px;
 }
 
 .projects{
